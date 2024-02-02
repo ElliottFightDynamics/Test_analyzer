@@ -1,0 +1,16 @@
+FROM python:3.8-slim
+
+# Set the working directory in the container
+WORKDIR /usr/src/app
+
+# Copy the Python dependencies file to the working directory
+COPY ai/package.json .
+
+# Install any dependencies
+RUN pip install --no-cache-dir -r package.json
+
+# Copy the rest of the AI application
+COPY ai/ .
+
+# Command to run the application
+CMD ["python", "./train_model.py"]

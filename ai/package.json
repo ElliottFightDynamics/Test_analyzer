@@ -1,0 +1,22 @@
+{
+  "name": "ai-code-analysis",
+  "version": "1.0.0",
+  "description": "AI component for analyzing, vectorizing, and documenting a codebase.",
+  "main": "train_model.py",
+  "scripts": {
+    "train": "python train_model.py",
+    "vectorize": "python vectorize_code.py",
+    "generate-doc": "python generate_documentation.py"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "numpy": "^1.21.2",
+    "scikit-learn": "^0.24.2",
+    "nltk": "^3.6.2",
+    "spacy": "^3.1.1",
+    "tensorflow": "^2.6.0",
+    "torch": "^1.9.0",
+    "transformers": "^4.9.2"
+  }
+}
